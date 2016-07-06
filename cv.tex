@@ -33,7 +33,11 @@
                           \hspace{1.5em} \textcolor{Maroon}{#2} 
                           #3 \vspace{0.5em}}
 
-\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+% description of position
+% #1 description
+% #2 location
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\footnotesize{#1}\par\normalsize\vspace{1em}}
+\newcommand{\DescriptionTest}[2]{\hangindent=2em\hangafter=0\noindent\footnotesize{#1}\newline\textup{#2}\par\normalsize\vspace{1em}}
 
 %----------------------------------------------------------------------------------------
 
@@ -59,10 +63,9 @@
 
 \NewEntry{2014--2016}{Master of Science}
 
-\Description{\MarginText{\textsc{Johns Hopkins University}}\textbf{Epidemiology}\ \ $\cdotp$\ \ Bloomberg School of Public Health\newline 
+\DescriptionTest{\MarginText{\textsc{Johns Hopkins University}}\textbf{Epidemiology}\ \ $\cdotp$\ \ Bloomberg School of Public Health\newline 
 Thesis: \textit{Quantifying proximal contacts between school children during school, outside of school and during school closures}\newline
-Advisor: Dr. Derek Cummings\newline
-Baltimore, MD}
+Advisor: Dr. Derek Cummings}{Baltimore,MD}
 
 %------------------------------------------------
 
