@@ -21,8 +21,10 @@
 % #1 date field 
 % #2 position title 
 % #3 description
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} \textcolor{Maroon}{#2} #3 
-\vspace{0.5em}} % Add some white space after each new entry
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 
+                          \parbox{\datebox}{\small \textit{#1}}
+                          \hspace{1.5em} \textcolor{Maroon}{#2} 
+                          #3 \vspace{0.5em}}
 
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
