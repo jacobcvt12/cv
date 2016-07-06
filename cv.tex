@@ -17,6 +17,11 @@
 
 \newlength{\datebox}\settowidth{\datebox}{2008--Present} % Set the width of the date box in each block
 
+% contact info
+\newcommand{\NewContact}[2]{\noindent\hangindent=2em\hangafter=0
+                            \parbox{\datebox}{\small \textit{#1}}
+                            \hspace{1.5em} #2}
+
 % Entry command
 % #1 date field 
 % #2 position title 
@@ -41,11 +46,9 @@
 
 \noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
 
-\NewEntry{email}{\href{mailto:jacobcvt12@gmail.com}{jacobcvt12@gmail.com}} % Email address
-
-\NewEntry{github}{\href{https://github.com/jacobcvt12}{https://github.com/jacobcvt12}} % github
-
-\NewEntry{phone}{+1 (434) 203 9317} % Phone number(s)
+\NewContact{email}{\href{mailto:jacobcvt12@gmail.com}{jacobcvt12@gmail.com}} % Email address
+\NewContact{github}{\href{https://github.com/jacobcvt12}{https://github.com/jacobcvt12}} % github
+\NewContact{phone}{+1 (434) 203 9317} % Phone number(s)
 
 \vspace{1em} % Extra white space between the personal information section and goal
 % }}}
