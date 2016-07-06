@@ -2,7 +2,7 @@
 % 1. Packages and document configuration {{{
 \documentclass{scrartcl}
 
-\reversemarginpar % Move the margin to the left of the page 
+\reversemarginpar% Move the margin to the left of the page 
 
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
 
@@ -42,58 +42,14 @@
 
 \vspace{1em} % Extra white space between the personal information section and goal
 % }}}
-% 3. Professional experience {{{
-\noindent\spacedlowsmallcaps{Professional Experience}\vspace{1em}
-
-\NewEntry{2016--Present}{Biostatistician}
-
-\Description{\MarginText{\textsc{Telligen}}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}
-
-%------------------------------------------------
-
-\NewEntry{2014}{Data Scientist}
-
-\Description{\MarginText{\textsc{Marriott}}Rated "truly distinctive" for Analytical Skills and Teamwork.}
-
-%------------------------------------------------
-
-\NewEntry{2012--2014}{Data Analyst}
-
-\Description{\MarginText{\textsc{Deloitte}}Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
-
-%------------------------------------------------
-
-\vspace{1em} % Extra space between major sections
-% }}}
-% 4. Research Experience {{{
-\noindent\spacedlowsmallcaps{Research Experience}\vspace{1em}
-
-\NewEntry{2016--Present}{Biostatistician}
-
-\Description{\MarginText{\textsc{Telligen}}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}
-
-%------------------------------------------------
-
-\NewEntry{2014}{Data Scientist}
-
-\Description{\MarginText{\textsc{Marriott}}Rated "truly distinctive" for Analytical Skills and Teamwork.}
-
-%------------------------------------------------
-
-\NewEntry{2012--2014}{Data Analyst}
-
-\Description{\MarginText{\textsc{Deloitte}}Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
-
-%------------------------------------------------
-% }}}
-% 5. Education {{{
+% 3. Education {{{
 \spacedlowsmallcaps{Education}\vspace{1em}
 
 \NewEntry{2014--2016}{Master of Science}
 
 \Description{\MarginText{\textsc{Johns Hopkins University}}\textbf{Epidemiology}\ \ $\cdotp$\ \ Bloomberg School of Public Health\newline 
 Thesis: \textit{Quantifying proximal contacts between school children during school, outside of school and during school closures}\newline
-Advisors: Dr. Derek Cummings}
+Advisor: Dr. Derek Cummings}
 
 %------------------------------------------------
 
@@ -105,61 +61,43 @@ Advisors: Dr. Derek Cummings}
 
 \vspace{1em} % Extra space between major sections
 % }}}
-% 6. Computer Skills {{{
-\spacedlowsmallcaps{Computer Skills}\vspace{1em}
+% 4. Professional experience {{{
+\noindent\spacedlowsmallcaps{Professional Experience}\vspace{1em}
 
-\Description{\MarginText{Basic}\textsc{java}, Adobe Illustrator}
+\NewEntry{2016--Present}{Biostatistician}
 
-\Description{\MarginText{Intermediate}\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\Description{\MarginText{\textsc{Telligen}}Develop hierarchical models to analyze medical data Assess health care quality factors Communicate results to clients using graphs.}
 
-\Description{\MarginText{Advanced}Computer Hardware and Support}
+%------------------------------------------------
+
+\NewEntry{2014}{Data Scientist}
+
+\Description{\MarginText{\textsc{Marriott}}Assisted with new Marriott user-centric sort order algorithm. Developed time series model to determine effectiveness of hotel promotions. Calculated weekly values of search engine keywords in order to best allocate online marketing funds. Performed web scraping of external websites to provide business insights. Worked with datasets greater than one billion rows. Automated reports using R \& ggplot2 and ETL using Python scripts.}
+
+%------------------------------------------------
+
+\NewEntry{2012--2014}{Data Analyst}
+
+\Description{\MarginText{\textsc{Deloitte}}Managed a client-facing team of three consultants in the analysis of datasets greater than one million rows. Led regular meetings and presented results and data visualizations to key clients and internal stakeholders. Developed web application to be used by federal agencies to optimize resource allocation.  Used Python to perform server-side calculations. Assisted federal agency in meeting requirements of government act using sample selection and estimation of disbursed grants and transactions.}
+
+%------------------------------------------------
 
 \vspace{1em} % Extra space between major sections
 % }}}
-% 7. Other Information {{{
-\spacedlowsmallcaps{Other Information}\vspace{1em}
+% 5. Research Experience {{{
+\noindent\spacedlowsmallcaps{Research Experience}\vspace{1em}
 
-\Description{\MarginText{Awards}2011\ \ $\cdotp$\ \ School of Business Postgraduate Scholarship}
+\NewEntry{2015--Present}{Research Assistant}
 
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\MarginText{\textsc{Johns Hopkins University}}Develop software to perform statistical analysis of genomic data. Use developed software to make inference on copy number status and disease association in large study}
+% }}}
+% 6. Skills {{{
+\spacedlowsmallcaps{Skills}\vspace{1em}
 
-\Description{2010\ \ $\cdotp$\ \ Top Achiever Award -- Commerce}
+\Description{\MarginText{\textsc{Programming}}R\ \ $\cdotp$\ \ JAGS\ \ $\cdotp$\ \  Stan \ \ $\cdotp$\ \  C++\ \ $\cdotp$\ \  Python\ \ $\cdotp$\ \  SQL\ \ $\cdotp$\ \ git\ \ $\cdotp$\ \  Vim\ \ $\cdotp$\ \  Bash}
 
-%------------------------------------------------
-
-\vspace{1em}
-
-\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
-
-%------------------------------------------------
-
-\vspace{1em}
-
-\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
-\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
-
-\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Mothertongue}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Intermediate (conversationally fluent)}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
-
-\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
-
-%------------------------------------------------
-
-\Description{\MarginText{Interests}Piano\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Dancing}
-
-%----------------------------------------------------------------------------------------
-
+\Description{\MarginText{\textsc{Statistics}}Statistical computing\ \ $\cdotp$\ \ Bayesian statistics\ \ $\cdotp$\ \ Multilevel modeling\ \ $\cdotp$\ \ Machine learning\ \ $\cdotp$\ \ Regression analysis\ \ $\cdotp$\ \ Time series analysis\ \ $\cdotp$\ \ Data visualization\ \ $\cdotp$\ \ Web scraping}
+\vspace{1em} % Extra space between major sections
 % }}}
 % 8. Ending {{{
 \end{cv}
