@@ -4,8 +4,6 @@
 
 \reversemarginpar% Move the margin to the left of the page 
 
-\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
-
 \usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
 \usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
 \usepackage{hyperref} % Required for adding links and customizing them
@@ -16,6 +14,9 @@
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
 
 \newlength{\datebox}\settowidth{\datebox}{2008--Present} % Set the width of the date box in each block
+% margin text
+% #1 text to go in margin
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\scshape\small #1}} % New command defining the margin text style
 
 % contact info
 % #1 contact method
@@ -71,7 +72,7 @@
 
 \NewEntry{2014--2016}{Master of Science}
 
-\Description{\MarginText{\textsc{Johns Hopkins University}}\textbf{Epidemiology}\ \ $\cdotp$\ \ Bloomberg School of Public Health\newline 
+\Description{\MarginText{Johns Hopkins University}\textbf{Epidemiology}\ \ $\cdotp$\ \ Bloomberg School of Public Health\newline 
 Thesis: \textit{Quantifying proximal contacts between school children during school, outside of school and during school closures}\newline
 Advisor: Dr. Derek Cummings}{Baltimore,MD}
 
@@ -79,7 +80,7 @@ Advisor: Dr. Derek Cummings}{Baltimore,MD}
 
 \NewEntry{2008--2012}{Bachelor of Science}
 
-\Description{\MarginText{\textsc{Virginia Tech}}\textbf{Mathematics}\ \ $\cdotp$\ \ College of Science}{Blacksburg, VA}
+\Description{\MarginText{Virginia Tech}\textbf{Mathematics}\ \ $\cdotp$\ \ College of Science}{Blacksburg, VA}
 
 %------------------------------------------------
 
@@ -90,19 +91,19 @@ Advisor: Dr. Derek Cummings}{Baltimore,MD}
 
 \NewEntry{2016--Present}{Biostatistician}
 
-\Description{\MarginText{\textsc{Telligen}}Develop hierarchical models to analyze medical data. Assess health care quality factors. Communicate results to clients using graphs.}{Columbia, MD}
+\Description{\MarginText{Telligen}Develop hierarchical models to analyze medical data. Assess health care quality factors. Communicate results to clients using graphs.}{Columbia, MD}
 
 %------------------------------------------------
 
 \NewEntry{2014}{Data Scientist}
 
-\Description{\MarginText{\textsc{Marriott}}Assisted with new Marriott user-centric sort order algorithm. Developed time series model to determine effectiveness of hotel promotions. Calculated weekly values of search engine keywords in order to best allocate online marketing funds. Performed web scraping of external websites to provide business insights. Worked with datasets greater than one billion rows. Automated reports using R \& ggplot2 and ETL using Python scripts.}{Bethesda, MD}
+\Description{\MarginText{Marriott}Assisted with new Marriott user-centric sort order algorithm. Developed time series model to determine effectiveness of hotel promotions. Calculated weekly values of search engine keywords in order to best allocate online marketing funds. Performed web scraping of external websites to provide business insights. Worked with datasets greater than one billion rows. Automated reports using R \& ggplot2 and ETL using Python scripts.}{Bethesda, MD}
 
 %------------------------------------------------
 
 \NewEntry{2012--2014}{Data Analyst}
 
-\Description{\MarginText{\textsc{Deloitte}}Managed a client-facing team of three consultants in the analysis of datasets greater than one million rows. Led regular meetings and presented results and data visualizations to key clients and internal stakeholders. Developed web application to be used by federal agencies to optimize resource allocation.  Used Python to perform server-side calculations. Assisted federal agency in meeting requirements of government act using sample selection and estimation of disbursed grants and transactions.}{Arlington, VA}
+\Description{\MarginText{Deloitte}Managed a client-facing team of three consultants in the analysis of datasets greater than one million rows. Led regular meetings and presented results and data visualizations to key clients and internal stakeholders. Developed web application to be used by federal agencies to optimize resource allocation.  Used Python to perform server-side calculations. Assisted federal agency in meeting requirements of government act using sample selection and estimation of disbursed grants and transactions.}{Arlington, VA}
 
 %------------------------------------------------
 
@@ -113,14 +114,14 @@ Advisor: Dr. Derek Cummings}{Baltimore,MD}
 
 \NewEntry{2015--Present}{}
 
-\Description{\MarginText{\textsc{Johns Hopkins University}}Develop software to perform statistical analysis of genomic data. Use developed software to make inference on copy number status and disease association in large study.}{Baltimore, MD}
+\Description{\MarginText{Johns Hopkins University}Develop software to perform statistical analysis of genomic data. Use developed software to make inference on copy number status and disease association in large study.}{Baltimore, MD}
 % }}}
 % 6. Skills {{{
 \spacedlowsmallcaps{Skills}\vspace{1em}
 
-\Skills{\MarginText{\textsc{Programming}}R\ \ $\cdotp$\ \ JAGS\ \ $\cdotp$\ \  Stan \ \ $\cdotp$\ \  C++\ \ $\cdotp$\ \  Python\ \ $\cdotp$\ \  SQL\ \ $\cdotp$\ \ git\ \ $\cdotp$\ \  Vim\ \ $\cdotp$\ \  Bash}
+\Skills{\MarginText{Programming}R\ \ $\cdotp$\ \ JAGS\ \ $\cdotp$\ \  Stan \ \ $\cdotp$\ \  C++\ \ $\cdotp$\ \  Python\ \ $\cdotp$\ \  SQL\ \ $\cdotp$\ \ git\ \ $\cdotp$\ \  Vim\ \ $\cdotp$\ \  Bash}
 
-\Skills{\MarginText{\textsc{Statistics}}Statistical computing\ \ $\cdotp$\ \ Bayesian statistics\ \ $\cdotp$\ \ Multilevel modeling\ \ $\cdotp$\ \ Machine learning\ \ $\cdotp$\ \ Regression analysis\ \ $\cdotp$\ \ Time series analysis\ \ $\cdotp$\ \ Data visualization\ \ $\cdotp$\ \ Web scraping}
+\Skills{\MarginText{Statistics}Statistical computing\ \ $\cdotp$\ \ Bayesian statistics\ \ $\cdotp$\ \ Multilevel modeling\ \ $\cdotp$\ \ Machine learning\ \ $\cdotp$\ \ Regression analysis\ \ $\cdotp$\ \ Time series analysis\ \ $\cdotp$\ \ Data visualization\ \ $\cdotp$\ \ Web scraping}
 
 \vspace{1em} % Extra space between major sections
 % }}}
