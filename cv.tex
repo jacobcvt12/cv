@@ -9,14 +9,19 @@
 \usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
 \usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
 \usepackage{hyperref} % Required for adding links and customizing them
+\usepackage{xcolor} % colors
 
 \renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
 
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
 
-\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+\newlength{\datebox}\settowidth{\datebox}{2008--Present} % Set the width of the date box in each block
 
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+% Entry command
+% #1 date field 
+% #2 position title 
+% #3 description
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} \textcolor{Maroon}{#2} #3 
 \vspace{0.5em}} % Add some white space after each new entry
 
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
