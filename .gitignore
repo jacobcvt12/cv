@@ -1,4 +1,10 @@
+# latex files
 cv.aux 
 cv.log 
 cv.out 
 *.pdf
+
+# vim files
+*.swp
+*.swo
+*.swn
